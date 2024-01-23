@@ -1,0 +1,8 @@
+import { IBlog } from './task.interface'; // Import your blog interface
+
+export interface IBlogCreateResponse {
+  status: number;
+  message: string;
+  blog: IBlog | null;
+  errors: { [key: string]: any } | null;
+}
